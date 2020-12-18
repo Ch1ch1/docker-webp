@@ -1,5 +1,5 @@
 #!/bin/bash
-set -x
+
 PARAMS=('-m 6 -q 70 -mt -af -progress')
 DIRECTORY=/drone/src/public/img/gallery
 
