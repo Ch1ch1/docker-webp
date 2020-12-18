@@ -5,4 +5,3 @@ RUN apk update && \
     rm -rf /var/cache/*
 COPY convert.sh /bin/
 RUN chmod +x /bin/convert.sh
-CMD   ["/bin/convert.sh"]
