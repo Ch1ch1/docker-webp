@@ -3,3 +3,5 @@ RUN apk update && \
     apk upgrade -U && \
     apk add ca-certificates ffmpeg libwebp libwebp-tools && \
     rm -rf /var/cache/*
+COPY convert.sh /bin/
+CMD   ["/bin/convert.sh"]
