@@ -1,7 +1,7 @@
 #!/bin/bash
 
 PARAMS=('-m 6 -q 70 -mt -af -progress')
-DIRECTORY=public/img/gallery
+DIRECTORY=/drone/src/public/img/gallery
 
 if [ $# -ne 0 ]; then
 	PARAMS=$@;
