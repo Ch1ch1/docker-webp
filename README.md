@@ -1,2 +1,2 @@
 # docker-webp
-A Docker image to convert images
+A Docker image to auto-convert images off my hugo gallery
