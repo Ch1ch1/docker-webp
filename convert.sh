@@ -13,14 +13,5 @@ shopt -s nullglob nocaseglob extglob
 
 for FILE in */*@(webp)
 do
-	if  [[ ! "$FILE" == *"$STRING"* ]]
-	 then
-		 if [[ -f $FILE ]] && [[ -f "${FILE%.*}"_thumb.webp ]]
-	 	 then
-	 		echo "Skiping $FILE file..."
-	 		continue
-		fi
 			 cwebp $PARAMS "$FILE" -o "${FILE%.*}"_thumb.webp
-	fi
-		 continue
 done
