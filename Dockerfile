@@ -1,4 +1,4 @@
-FROM alpine:3.12
+FROM alpine:3.12.3
 RUN apk --no-cache update \
     && apk upgrade -U \
     && apk --no-cache add bash ca-certificates ffmpeg libwebp libwebp-tools \
