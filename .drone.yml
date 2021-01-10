@@ -28,7 +28,7 @@ steps:
         "contentType": "text/markdown"
         }
       },
-       "message": "![](https://ch1ch1.fr/img/ok.webp) **{{ repo.owner }}** as updated **{{ repo.name }}**, result: **{{ build.status }}**.",
+       "message": "![](https://ch1ch1.fr/img/ok.webp) **{{ commit.author }}** as updated **{{ repo.name }}**, result: **{{ build.status }}**.",
        "priority": 4,
        "title": "{{ repo.name }} build"
       }
@@ -47,7 +47,7 @@ steps:
         "contentType": "text/markdown"
         }
       },
-       "message": "![](https://ch1ch1.fr/img/nok.webp) **{{ repo.owner }}** as updated **{{ repo.name }}**, result: **{{ build.status }}**.",
+       "message": "![](https://ch1ch1.fr/img/nok.webp) **{{ commit.author }}** as updated **{{ repo.name }}**, result: **{{ build.status }}**.",
        "priority": 4,
        "title": "{{ repo.name }} build"
       }
@@ -56,6 +56,6 @@ steps:
 
 ---
 kind: signature
-hmac: 00da489780d165ca85027587ea677042b2eabd600bb3767db429016a3d604011
+hmac: 67d35fbfc29cb1b15d91df007499bc71fae4cc032cbb73f9eccdd4f47a9c67fd
 
 ...
