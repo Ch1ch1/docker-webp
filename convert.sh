@@ -13,5 +13,5 @@ shopt -s nullglob nocaseglob extglob
 
 for FILE in */*@(webp)
 do
-			 cwebp $PARAMS "$FILE" -o "${FILE%.*}"_thumb.webp
+			 cwebp $PARAMS "$FILE" -o "${FILE%.*}"-thumb.webp
 done
