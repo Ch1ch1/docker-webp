@@ -1,7 +1,7 @@
 #!/bin/bash
 
 PARAMS=('-m 6 -q 70 -mt -af -progress -resize 300 0 -low_memory')
-DIRECTORY="public/img/gallery"
+DIRECTORY="/drone/src/static/img/gallery"
 STRING="_thumb"
 
 if [ $# -ne 0 ]; then
